@@ -535,6 +535,11 @@
   resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.18.20.tgz"
   integrity sha512-UYqiqemphJcNsFEskc73jQ7B9jgwjWrSayxawS6UVFZGWrAAtkzjxSqnoclCXxWtfwLdzU+vTpcNYhpn43uP1w==
 
+"@esbuild/win32-x64@0.18.20":
+  version "0.18.20"
+  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz"
+  integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
+
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.1"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.4.1.tgz"
@@ -632,11 +637,6 @@
     ajv-formats "^2.1.1"
     fast-uri "^2.0.0"
 
-"@fastify/autoload@^5.0.0":
-  version "5.10.0"
-  resolved "https://registry.npmjs.org/@fastify/autoload/-/autoload-5.10.0.tgz"
-  integrity sha512-4A6s86qMbjcpWHmJL7cErtjIxOPuW8c67DLiuO8HoJQxuK97vaptoUnK5BTOwRg1ntYqfc3tjwerTTo5NQ3fEQ==
-
 "@fastify/deepmerge@^1.2.0":
   version "1.3.0"
   resolved "https://registry.npmjs.org/@fastify/deepmerge/-/deepmerge-1.3.0.tgz"
@@ -660,19 +660,6 @@
   integrity sha512-fERDVz7topgNjtXsJTTW1JKLy0rhuLRcquYqNR9rF7OcVpCa2OVW49ZPDIhaRRCaUuvVxI+N416xUoF76HNSXA==
   dependencies:
     fast-deep-equal "^3.1.3"
-
-"@fastify/sensible@^5.0.0":
-  version "5.6.0"
-  resolved "https://registry.npmjs.org/@fastify/sensible/-/sensible-5.6.0.tgz"
-  integrity sha512-Vq6Z2ZQy10GDqON+hvLF52K99s9et5gVVxTul5n3SIAf0Kq5QjPRUKkAMT3zPAiiGvoHtS3APa/3uaxfDgCODQ==
-  dependencies:
-    "@lukeed/ms" "^2.0.1"
-    fast-deep-equal "^3.1.1"
-    fastify-plugin "^4.0.0"
-    forwarded "^0.2.0"
-    http-errors "^2.0.0"
-    type-is "^1.6.18"
-    vary "^1.1.2"
 
 "@humanfs/core@^0.19.1":
   version "0.19.1"
@@ -983,17 +970,6 @@
     resolve-from "^3.0.0"
     rimraf "^3.0.0"
 
-"@istanbuljs/esm-loader-hook@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/@istanbuljs/esm-loader-hook/-/esm-loader-hook-0.2.0.tgz"
-  integrity sha512-pw8o3zWCen4sgiNJq69Pcl1Og7Bx4WP3ho7py2FLqZ56Hnz812yN2WwdViCx9tn9U5EWtzF4aqHDRnD7vDs92g==
-  dependencies:
-    "@babel/core" "^7.8.7"
-    "@istanbuljs/load-nyc-config" "^1.1.0"
-    "@istanbuljs/schema" "^0.1.3"
-    babel-plugin-istanbul "^6.0.0"
-    test-exclude "^6.0.0"
-
 "@istanbuljs/load-nyc-config@^1.0.0", "@istanbuljs/load-nyc-config@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz"
@@ -1286,6 +1262,11 @@
   resolved "https://registry.npmjs.org/@napi-rs/nice-linux-x64-musl/-/nice-linux-x64-musl-1.0.1.tgz"
   integrity sha512-/rodHpRSgiI9o1faq9SZOp/o2QkKQg7T+DK0R5AkbnI/YxvAIEHf2cngjYzLMQSQgUhxym+LFr+UGZx4vK4QdQ==
 
+"@napi-rs/nice-win32-x64-msvc@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@napi-rs/nice-win32-x64-msvc/-/nice-win32-x64-msvc-1.0.1.tgz"
+  integrity sha512-JlF+uDcatt3St2ntBG8H02F1mM45i5SF9W+bIKiReVE6wiy3o16oBP/yxt+RZ+N6LbCImJXJ6bXNO2kn9AXicg==
+
 "@napi-rs/nice@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@napi-rs/nice/-/nice-1.0.1.tgz"
@@ -1333,22 +1314,13 @@
     webpack "5.98.0"
     webpack-node-externals "3.0.0"
 
-"@nestjs/common@^11.0.0", "@nestjs/common@^11.0.10":
+"@nestjs/common@^11.0.0", "@nestjs/common@^11.0.10", "@nestjs/common@^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0":
   version "11.0.10"
   resolved "https://registry.npmjs.org/@nestjs/common/-/common-11.0.10.tgz"
   integrity sha512-pzGXp14KF2Q4CDZGQgPK4l8zEg7i6cNkb+10yc8ZA5K41cLe3ZbWW1YxtY2e/glHauOJwTLSVjH4tiRVtOTizg==
   dependencies:
     iterare "1.2.1"
     tslib "2.8.1"
-    uid "2.0.2"
-
-"@nestjs/common@^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0":
-  version "9.4.3"
-  resolved "https://registry.npmjs.org/@nestjs/common/-/common-9.4.3.tgz"
-  integrity sha512-Gd6D4IaYj01o14Bwv81ukidn4w3bPHCblMUq+SmUmWLyosK+XQmInCS09SbDDZyL8jy86PngtBLTdhJ2bXSUig==
-  dependencies:
-    iterare "1.2.1"
-    tslib "2.5.3"
     uid "2.0.2"
 
 "@nestjs/core@^11.0.0", "@nestjs/core@^11.0.10":
@@ -1489,6 +1461,11 @@
   version "1.10.16"
   resolved "https://registry.npmjs.org/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.10.16.tgz"
   integrity sha512-EevCpwreBrkPrJjQVIbiM81lK42ukNNSlBmrSRxxbx2V9VGmOd5qxX0cJBn0TRRSLIPi62BuMS76F9iYjqsjgg==
+
+"@swc/core-win32-x64-msvc@1.10.16":
+  version "1.10.16"
+  resolved "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.10.16.tgz"
+  integrity sha512-p0blVm0R8bjaTtmW+FoPmLxLSQdRNbqhuWcR/8g80OzMSkka9mk5/J3kn/5JRVWh+MaR9LHRHZc1Q1L8zan13g==
 
 "@swc/core@^1.10.16", "@swc/core@^1.2.66", "@swc/core@^1.3.62", "@swc/core@>=1.2.50":
   version "1.10.16"
@@ -2394,10 +2371,6 @@ avvio@^8.3.0:
     fastq "^1.17.1"
 
 "azure-nodejs-microservices@file:":
-  version "1.0.0"
-  resolved "file:"
-  dependencies:
-    azure-nodejs-microservices "file:"
 
 b4a@^1.6.4:
   version "1.6.7"
@@ -3075,14 +3048,6 @@ convert-to-spaces@^1.0.1:
   resolved "https://registry.npmjs.org/convert-to-spaces/-/convert-to-spaces-1.0.2.tgz"
   integrity sha512-cj09EBuObp9gZNQCzc7hByQyrs6jVGE+o9kSJmeUoj+GiPiJvi5LYqEH/Hmme4+MTLHM+Ejtq+FChpjjEnsPdQ==
 
-cookie-parser@^1.4.4:
-  version "1.4.7"
-  resolved "https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.4.7.tgz"
-  integrity sha512-nGUvgXnotP3BsjiLX2ypbQnWoGUPIIfHQNZkkC668ntrzGWEZVW70HDEB1qnNGMicPje6EttlIgzo51YSwNQGw==
-  dependencies:
-    cookie "0.7.2"
-    cookie-signature "1.0.6"
-
 cookie-signature@^1.2.1:
   version "1.2.2"
   resolved "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.2.2.tgz"
@@ -3175,12 +3140,19 @@ dateformat@^4.6.3:
   resolved "https://registry.npmjs.org/dateformat/-/dateformat-4.6.3.tgz"
   integrity sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==
 
-debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@^4.3.5, debug@^4.4.0:
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@^4.4.0:
   version "4.4.0"
   resolved "https://registry.npmjs.org/debug/-/debug-4.4.0.tgz"
   integrity sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
   dependencies:
     ms "^2.1.3"
+
+debug@^4.3.5, debug@4.3.6:
+  version "4.3.6"
+  resolved "https://registry.npmjs.org/debug/-/debug-4.3.6.tgz"
+  integrity sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==
+  dependencies:
+    ms "2.1.2"
 
 debug@2.6.9:
   version "2.6.9"
@@ -3188,13 +3160,6 @@ debug@2.6.9:
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   dependencies:
     ms "2.0.0"
-
-debug@4.3.6:
-  version "4.3.6"
-  resolved "https://registry.npmjs.org/debug/-/debug-4.3.6.tgz"
-  integrity sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==
-  dependencies:
-    ms "2.1.2"
 
 decamelize@^1.2.0:
   version "1.2.0"
@@ -3275,16 +3240,16 @@ dezalgo@^1.0.4:
     asap "^2.0.0"
     wrappy "1"
 
-"dice-api@file:/workspaces/nodejs-microservices-template/packages/dice-api":
+"dice-api@file:", "dice-api@file:/workspaces/nodejs-microservices-template/packages/dice-api":
   version "0.0.1"
   resolved "file:packages/dice-api"
   dependencies:
-    "@nestjs/common" "^9.0.0"
-    "@nestjs/core" "^9.0.0"
-    "@nestjs/platform-express" "^9.0.0"
+    "@nestjs/common" "^11.0.10"
+    "@nestjs/core" "^11.0.10"
+    "@nestjs/platform-express" "^11.0.10"
     dice-api "file:"
-    nestjs-pino "^3.1.1"
-    reflect-metadata "^0.1.13"
+    nestjs-pino "^4.3.0"
+    reflect-metadata "^0.2.2"
     rxjs "^7.2.0"
 
 diff-sequences@^29.6.3:
@@ -3724,43 +3689,6 @@ expect@^29.0.0, expect@^29.7.0:
     jest-message-util "^29.7.0"
     jest-util "^29.7.0"
 
-express@^4.18.2:
-  version "4.21.2"
-  resolved "https://registry.npmjs.org/express/-/express-4.21.2.tgz"
-  integrity sha512-28HqgMZAmih1Czt9ny7qr6ek2qddF4FclbMzwhCREB6OFfH+rXAnuNCwo1/wFvrtbgsQDb4kSbX9de9lFbrXnA==
-  dependencies:
-    accepts "~1.3.8"
-    array-flatten "1.1.1"
-    body-parser "1.20.3"
-    content-disposition "0.5.4"
-    content-type "~1.0.4"
-    cookie "0.7.1"
-    cookie-signature "1.0.6"
-    debug "2.6.9"
-    depd "2.0.0"
-    encodeurl "~2.0.0"
-    escape-html "~1.0.3"
-    etag "~1.8.1"
-    finalhandler "1.3.1"
-    fresh "0.5.2"
-    http-errors "2.0.0"
-    merge-descriptors "1.0.3"
-    methods "~1.1.2"
-    on-finished "2.4.1"
-    parseurl "~1.3.3"
-    path-to-regexp "0.1.12"
-    proxy-addr "~2.0.7"
-    qs "6.13.0"
-    range-parser "~1.2.1"
-    safe-buffer "5.2.1"
-    send "0.19.0"
-    serve-static "1.16.2"
-    setprototypeof "1.2.0"
-    statuses "2.0.1"
-    type-is "~1.6.18"
-    utils-merge "1.0.1"
-    vary "~1.1.2"
-
 express@5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/express/-/express-5.0.1.tgz"
@@ -3913,29 +3841,6 @@ fast-uri@^3.0.1:
   version "3.0.6"
   resolved "https://registry.npmjs.org/fast-uri/-/fast-uri-3.0.6.tgz"
   integrity sha512-Atfo14OibSv5wAp4VWNsFYE1AchQRTv9cBGWET4pZWHzYshFSS9NQI6I57rdKn9croWVMbYFbLhJ+yJvmZIIHw==
-
-fastify-cli@^5.7.0:
-  version "5.9.0"
-  resolved "https://registry.npmjs.org/fastify-cli/-/fastify-cli-5.9.0.tgz"
-  integrity sha512-CaIte5SwkLuvlzpdd1Al1VRVVwm2TQVV4bfVP4oz/Z54KVSo6pqNTgnxWOmyzdcNUbFnhJ3Z4vRjzvHoymP5cQ==
-  dependencies:
-    "@fastify/deepmerge" "^1.2.0"
-    chalk "^4.1.2"
-    chokidar "^3.5.2"
-    close-with-grace "^1.1.0"
-    commist "^3.0.0"
-    dotenv "^16.0.0"
-    fastify "^4.0.0"
-    fastify-plugin "^4.0.0"
-    generify "^4.0.0"
-    help-me "^4.0.1"
-    is-docker "^2.0.0"
-    make-promises-safe "^5.1.0"
-    pino-pretty "^10.1.0"
-    pkg-up "^3.1.0"
-    resolve-from "^5.0.0"
-    semver "^7.3.5"
-    yargs-parser "^21.1.1"
 
 fastify-plugin@^4.0.0:
   version "4.5.1"
@@ -4246,15 +4151,8 @@ function-loop@^2.0.1:
   resolved "https://registry.npmjs.org/function-loop/-/function-loop-2.0.1.tgz"
   integrity sha512-ktIR+O6i/4h+j/ZhZJNdzeI4i9lEPeEK6UPR2EVyTVBqOwcU3Za9xYKLH64ZR9HmcROyRrOkizNyjjtWJzDDkQ==
 
-"gateway-api@file:", "gateway-api@file:/workspaces/nodejs-microservices-template/packages/gateway-api":
-  version "0.0.0"
-  resolved "file:packages/gateway-api"
-  dependencies:
-    cookie-parser "^1.4.4"
-    debug "^4.3.4"
-    express "^4.18.2"
-    gateway-api "file:"
-    pino-http "^8.2.1"
+"gateway-api@file:/workspaces/nodejs-microservices-template/packages/gateway-api":
+  resolved "git+ssh://git@github.com/packages/gateway-api.git"
 
 generify@^4.0.0:
   version "4.2.0"
@@ -6071,7 +5969,7 @@ path-scurry@^2.0.0:
     lru-cache "^11.0.0"
     minipass "^7.1.2"
 
-path-to-regexp@^8.0.0:
+path-to-regexp@^8.0.0, path-to-regexp@8.2.0:
   version "8.2.0"
   resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-8.2.0.tgz"
   integrity sha512-TdrF7fW9Rphjq4RjrW0Kp2AW0Ahwu9sRGTkS6bvDi0SCwZlEZYmcfDbEsTz8RVk0EHIS/Vd1bv3JhG+1xZuAyQ==
@@ -6080,11 +5978,6 @@ path-to-regexp@0.1.12:
   version "0.1.12"
   resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.12.tgz"
   integrity sha512-RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz/Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS/bSeOZwt1pmEQ==
-
-path-to-regexp@8.2.0:
-  version "8.2.0"
-  resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-8.2.0.tgz"
-  integrity sha512-TdrF7fW9Rphjq4RjrW0Kp2AW0Ahwu9sRGTkS6bvDi0SCwZlEZYmcfDbEsTz8RVk0EHIS/Vd1bv3JhG+1xZuAyQ==
 
 path-type@^4.0.0:
   version "4.0.0"
@@ -6139,7 +6032,7 @@ pino-abstract-transport@^2.0.0:
   dependencies:
     split2 "^4.0.0"
 
-"pino-http@^6.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0", pino-http@^8.2.1:
+"pino-http@^6.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0":
   version "8.6.1"
   resolved "https://registry.npmjs.org/pino-http/-/pino-http-8.6.1.tgz"
   integrity sha512-J0hiJgUExtBXP2BjrK4VB305tHXS31sCmWJ9XJo2wPkLHa1NFPuW4V9wjG27PAc2fmBCigiNhQKpvrx+kntBPA==
@@ -6196,7 +6089,7 @@ pino@^8.17.1:
     sonic-boom "^3.7.0"
     thread-stream "^2.6.0"
 
-pino@^9.0.0:
+pino@^9.0.0, pino@^9.6.0:
   version "9.6.0"
   resolved "https://registry.npmjs.org/pino/-/pino-9.6.0.tgz"
   integrity sha512-i85pKRCt4qMjZ1+L7sy2Ag4t1atFcdbEt76+7iRJn1g2BvsnRMGu9p8pivl9fs63M2kF/A0OacFZhTub+m/qMg==
@@ -6340,14 +6233,7 @@ pure-rand@^6.0.0:
   resolved "https://registry.npmjs.org/pure-rand/-/pure-rand-6.1.0.tgz"
   integrity sha512-bVWawvoZoBYpp6yIoQtQXHZjmz35RSVHnUOTefl8Vcjr8snTPY1wnpSPMWekcFwbxI6gtmT7rSYPFvz71ldiOA==
 
-qs@^6.11.0:
-  version "6.11.0"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.11.0.tgz"
-  integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
-  dependencies:
-    side-channel "^1.0.4"
-
-qs@^6.14.0:
+qs@^6.11.0, qs@^6.14.0:
   version "6.14.0"
   resolved "https://registry.npmjs.org/qs/-/qs-6.14.0.tgz"
   integrity sha512-YWWTjgABSKcvs/nWBi9PycY/JiPJqOD4JA6o9Sej2AtvSGarXxKC3OQSk4pAarbdQlKAh5D4FCQkJNkW+GAn3w==
@@ -6495,15 +6381,15 @@ redeyed@~2.1.0:
   dependencies:
     esprima "~4.0.0"
 
-"reflect-metadata@^0.1.12 || ^0.2.0", reflect-metadata@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.2.2.tgz"
-  integrity sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==
-
-reflect-metadata@^0.1.12:
+"reflect-metadata@^0.1.12 || ^0.2.0":
   version "0.1.14"
   resolved "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.1.14.tgz"
   integrity sha512-ZhYeb6nRaXCfhnndflDK8qI6ZQ/YcWZCISRAWICW9XYqMUwjZM9Z0DveWX/ABN01oxSHwVxKQmxeYZSsm0jh5A==
+
+reflect-metadata@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.2.2.tgz"
+  integrity sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==
 
 regenerator-runtime@^0.14.0:
   version "0.14.1"
@@ -6839,16 +6725,8 @@ setprototypeof@1.2.0:
   resolved "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
 
-"settings-api@file:", "settings-api@file:/workspaces/nodejs-microservices-template/packages/settings-api":
-  version "1.0.0"
-  resolved "file:packages/settings-api"
-  dependencies:
-    "@fastify/autoload" "^5.0.0"
-    "@fastify/sensible" "^5.0.0"
-    fastify "^4.0.0"
-    fastify-cli "^5.7.0"
-    fastify-plugin "^4.0.0"
-    settings-api "file:"
+"settings-api@file:/workspaces/nodejs-microservices-template/packages/settings-api":
+  resolved "git+ssh://git@github.com/packages/settings-api.git"
 
 shebang-command@^2.0.0:
   version "2.0.0"
@@ -6899,7 +6777,7 @@ side-channel-weakmap@^1.0.2:
     object-inspect "^1.13.3"
     side-channel-map "^1.0.1"
 
-side-channel@^1.0.4, side-channel@^1.0.6, side-channel@^1.1.0:
+side-channel@^1.0.6, side-channel@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/side-channel/-/side-channel-1.1.0.tgz"
   integrity sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==
@@ -7274,38 +7152,6 @@ tap-yaml@^1.0.0, tap-yaml@^1.0.2:
   dependencies:
     yaml "^1.10.2"
 
-tap@^16.1.0:
-  version "16.3.10"
-  resolved "https://registry.npmjs.org/tap/-/tap-16.3.10.tgz"
-  integrity sha512-q5Am+PpGHS6JSjk/Zn4bCRBihmZVM15v/MYXUy60wenw5HDe7pVrevLCEoMEz7tuw6jaPOJJqni1y8apN23IGw==
-  dependencies:
-    "@isaacs/import-jsx" "^4.0.1"
-    "@types/react" "^17.0.52"
-    chokidar "^3.3.0"
-    findit "^2.0.0"
-    foreground-child "^2.0.0"
-    fs-exists-cached "^1.0.0"
-    glob "^7.2.3"
-    ink "^3.2.0"
-    isexe "^2.0.0"
-    istanbul-lib-processinfo "^2.0.3"
-    jackspeak "^1.4.2"
-    libtap "^1.4.0"
-    minipass "^3.3.4"
-    mkdirp "^1.0.4"
-    nyc "^15.1.0"
-    opener "^1.5.1"
-    react "^17.0.2"
-    rimraf "^3.0.0"
-    signal-exit "^3.0.6"
-    source-map-support "^0.5.16"
-    tap-mocha-reporter "^5.0.3"
-    tap-parser "^11.0.2"
-    tap-yaml "^1.0.2"
-    tcompare "^5.0.7"
-    treport "^3.0.4"
-    which "^2.0.2"
-
 tapable@^2.1.1, tapable@^2.2.0, tapable@^2.2.1:
   version "2.2.1"
   resolved "https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz"
@@ -7526,11 +7372,6 @@ tslib@^2.1.0, tslib@^2.6.2, tslib@2.8.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
 
-tslib@2.5.3:
-  version "2.5.3"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.3.tgz"
-  integrity sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==
-
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz"
@@ -7703,17 +7544,6 @@ vary@^1, vary@^1.1.2, vary@~1.1.2:
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vite@^4.0.0:
-  version "4.5.9"
-  resolved "https://registry.npmjs.org/vite/-/vite-4.5.9.tgz"
-  integrity sha512-qK9W4xjgD3gXbC0NmdNFFnVFLMWSNiR3swj957yutwzzN16xF/E7nmtAyp1rT9hviDroQANjE4HK3H4WqWdFtw==
-  dependencies:
-    esbuild "^0.18.10"
-    postcss "^8.4.27"
-    rollup "^3.27.1"
-  optionalDependencies:
-    fsevents "~2.3.2"
-
 walker@^1.0.6, walker@^1.0.8:
   version "1.0.8"
   resolved "https://registry.npmjs.org/walker/-/walker-1.0.8.tgz"
@@ -7775,11 +7605,8 @@ webpack@^5.0.0, webpack@^5.1.0, webpack@^5.11.0, webpack@5.98.0:
     watchpack "^2.4.1"
     webpack-sources "^3.2.3"
 
-"website@file:", "website@file:/workspaces/nodejs-microservices-template/packages/website":
-  version "0.0.0"
-  resolved "file:packages/website"
-  dependencies:
-    website "file:"
+"website@file:/workspaces/nodejs-microservices-template/packages/website":
+  resolved "git+ssh://git@github.com/packages/website.git"
 
 which-module@^2.0.0:
   version "2.0.1"

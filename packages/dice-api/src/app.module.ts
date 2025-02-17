@@ -6,18 +6,9 @@ import { DbService } from './db.service';
 import { RollsController } from './rolls.controller';
 
 @Module({
-  imports: [
-    LoggerModule.forRootAsync({
-      useFactory: async () => ({
-        // You can configure the logger here if needed
-        pinoHttp: {
-          level: 'info', // Example of setting the log level
-          prettyPrint: { colorize: true },
-        },
-      }),
-    }),
-  ],
+  imports: [LoggerModule.forRoot()],
   controllers: [AppController, RollsController],
   providers: [AppService, DbService],
 })
 export class AppModule {}
+
