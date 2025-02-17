@@ -23,6 +23,7 @@ async function rollDices(userId, count) {
 
   return { result: await Promise.all(promises) };
 }
+
 async function getRollsHistory(userId, max) {
   max = max ?? '';
   const { sides } = await getUserSettings(userId);
@@ -32,6 +33,7 @@ async function getRollsHistory(userId, max) {
   }
   return response.json();
 }
+
 module.exports = {
   rollDices,
   getRollsHistory,

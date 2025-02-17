@@ -14,6 +14,7 @@ function getUser(req) {
   }
   return undefined;
 }
+
 // Middleware to check if user is authenticated
 function auth(req, res, next) {
   req.user = getUser(req);

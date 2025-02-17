@@ -6,8 +6,6 @@ const resultDiv = document.getElementById('result');
 
 async function getUserSettings() {
   const response = await fetch(`${apiUrl}/settings`);
-  console.log({url :`${apiUrl}/settings`});
-
   if (response.ok) {
     const { sides } = await response.json();
     sidesInput.value = sides;
@@ -86,7 +84,7 @@ async function main() {
   if (user) {
     // Load user settings
     await getUserSettings();
-
+    
     document.getElementById('app').hidden = false;
     document.getElementById('user').innerHTML = user.userDetails;
   } else {

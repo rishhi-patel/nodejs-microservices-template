@@ -22,12 +22,11 @@
     "docker:run": "docker run --rm --publish 4002:4002 dice-api"
   },
   "dependencies": {
+    "@azure/cosmos": "^4.2.0",
     "@nestjs/common": "^11.0.10",
     "@nestjs/core": "^11.0.10",
     "@nestjs/platform-express": "^11.0.10",
-    "dice-api": "file:",
     "nestjs-pino": "^4.3.0",
-    "pino": "^9.6.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.2.0"
   },
